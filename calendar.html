@@ -187,7 +187,7 @@ function CalendarControl() {
       return lastDate;
     },
     navigateToPreviousMonth: function() {
-      calendar.setMonth(calendar.getMonth() 1);
+      calendar.setMonth(calendar.getMonth() - 1);
       calendarControl.attachEventsOnNextPrev();
     },
     navigateToNextMonth: function() {
