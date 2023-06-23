@@ -8,7 +8,7 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
 :root {
     --calendar-bg-color: #FFF;
-    --calendar-font-color: ##EFA69F;
+    --calendar-font-color: #efa69f;
     --weekdays-border-bottom-color: #404040;
     --calendar-date-hover-color: #505050;
     --calendar-current-date-color: #1b1f21;
@@ -150,18 +150,18 @@ function CalendarControl() {
     localDate: new Date(),
     calWeekDays: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun"],
     calMonthName: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
+      "January",
+      "February",
+      "March",
+      "April",
       "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
     ],
     daysInMonth: function(month, year) {
       return new Date(year, month, 0).getDate();
@@ -187,7 +187,7 @@ function CalendarControl() {
       return lastDate;
     },
     navigateToPreviousMonth: function() {
-      calendar.setMonth(calendar.getMonth() - 1);
+      calendar.setMonth(calendar.getMonth() 1);
       calendarControl.attachEventsOnNextPrev();
     },
     navigateToNextMonth: function() {
